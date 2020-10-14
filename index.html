@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="portfolioCSS.css">
+
+        <div id="heading">
+            <div class="alignImage" >
+
+                <img  class="a" src="me.jpg" alt="profilepic">
+
+                <h1 style="color:white;" class="a">Hello, My name is Anton and welcome to my Portfolio.
+
+                </h1>
+            </div>
+        </div>
+    </head>
+    <body>
+        <div id="mainContainer">
+            <div id="innerLeft">
+                <h1 class="b" style="color:white;">iOS Projects</h1>
+                <p class="mainText" style="color: white;">
+                    PlanIt is a social media app designed to help photographers and enthusiasts to find inspiration and creativity in regards to taking images. Photographers could be on a tight schedule when traveling to a destination to take images or they don’t have knowledge of the area whereas users who are local or have been there have amazing photos which can help you decide whether they want to explore the location. It uses Firebase as database storage which provides fast and safe way of storing images and personal data. PlanIt allows the user to get directions to the image locatiuon using Apple Maps integrated within the application providing the user with easy to follow directions. Furthermore, the user is able to receive information about the weather information at the location so they can be prepared for any conditions. The project is currently under development and it hasn't got all the planned features implemented. Demo video of the project is available <a href="https://www.youtube.com/watch?v=p5XdfLvDFyA&ab_channel=AntonSamuilov">on my Youtube Channel.</a>
+ 
+
+
+                </p>
+            </div>
+            <div id="innerRight" >
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    
+
+                    <div class="mySlides fade">
+                      
+                        <img  class="mainImages" src="1.png" style="width:100%">
+                        <div class="text">Caption Two</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                       
+                        <img class="mainImages" src="2.png" style="width:100%">
+                        <div class="text">Caption Three</div>
+                    </div>
+                    <div class="mySlides fade">
+                       
+                        <img class="mainImages" src="3.png" style="width: 100%">
+                        <div class="text">Caption Three</div>
+                    </div>
+                    <div class="mySlides fade">
+                       
+                        <img class="mainImages" src="4.png" style="width:100%">
+                        <div class="text">Caption Three</div>
+                    </div>
+                    <div class="mySlides fade">
+                       
+                        <img class="mainImages" src="5.png" style="width:100%">
+                        <div class="text">Caption Three</div>
+                    </div>
+                    <div class="mySlides fade">
+                       
+                        <img class="mainImages" src="6.png" style="width:100%">
+                        <div class="text">Caption Three</div>
+                    </div>
+                    <div class="mySlides fade">
+                       
+                        <img class="mainImages" src="7.png" style="width:100%">
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                    <div class="alignDots" style="text-align:center">
+                        
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                                                <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                        
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </body>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+</html>
