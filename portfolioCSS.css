@@ -16,6 +16,7 @@ img.a {
 
 body{
     background-color: #255370;
+    padding-bottom: 100px;
 }
 .gfg { 
     width:auto; 
@@ -46,11 +47,20 @@ img.main{
 }
 p.mainText{
 
-    padding: 50px;
-    font-family: "Times New Roman", Times, serif;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;    
     font-size: 25px;
     width: 100%;
 }
+
+li.list{
+    padding-right: 50px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 22px;
+
+}
+
 h1.a {
     font-family: "Tahoma, Geneva", sans-serif;
     margin-bottom: 5px;
@@ -59,6 +69,7 @@ h1.b
 {
     font-family: "Sansita Swashed", cursive;
     padding: 10px;
+    margin-bottom: 70px;
 }
 
 #innerRight{
@@ -67,6 +78,7 @@ h1.b
     width: 48%;
     height: 100%;
     padding-top: 50px;
+    background-color: #457b9d; 
 
     margin-left: auto;
     float: right;
@@ -81,6 +93,8 @@ h1.b
     align-content: center;
     background-color: #457b9d; 
     float: left;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+
     padding-left: 10px;
     border-radius: 10px;
     border: 1px solid transperent ;
